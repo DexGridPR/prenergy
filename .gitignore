@@ -47,6 +47,7 @@ firebase.json
 .firebaserc
 .firebase
 /functions
+/prenergy
 
 # System Files
 .DS_Store
