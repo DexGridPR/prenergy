@@ -9,11 +9,18 @@
     ]
   },
   "hosting": {
-    "public": "public",
+    "public": "dist/prenergy",
+    "destination": "/index.html",
     "ignore": [
       "firebase.json",
       "**/.*",
       "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/src/index.html"
+      }
     ]
   },
   "storage": {

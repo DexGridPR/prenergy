@@ -1,0 +1,33 @@
+<section class="main">
+  <div class="title">
+    <p>Try out our solar PV sizing tool:</p>
+  </div>
+
+  <section class="consumption">
+    <mat-card>
+      <label for="phone">Enter your annual consumption in kWh:</label>
+      <br>
+      <br>
+      <input type="number" #kwh placeholder="3000 kWh">
+      <!-- <mat-hint>Amount is most likely in the thousands of kWh</mat-hint> -->
+      <button mat-raised-button color="primary" (click)="calcSystem(kwh.value)">Submit</button>
+    </mat-card>
+
+  </section>
+
+  <section class="answer" *ngIf="consAmount > 0">
+    <mat-card class="answerCard">
+      <p>Appropriate system size:</p>
+      <p>{{consAmount}} kW</p>
+      <p>About {{ panelAmount }} solar panels</p>
+      <p>Cost will come out to around ${{ cost }}</p>
+    </mat-card>
+
+    <!-- <ng-template #elseBlock>
+      <p class="else">Ready to show you your size system size</p>
+    </ng-template> -->
+  </section>
+
+
+
+</section>

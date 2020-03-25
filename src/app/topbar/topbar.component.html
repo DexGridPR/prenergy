@@ -1,0 +1,41 @@
+<section class="main">
+  <!-- <div class="homeB"> -->
+  <button class="homeB" mat-raised-button color="primary" routerLink="">Go Home</button>
+  <!-- </div> -->
+  <div class="sections">
+    <!-- <button mat-raised-button color="primary" [matMenuTriggerFor]="matMenu" >Sections</button>
+
+        <mat-menu #matMenu="matMenu">
+            <button mat-menu-item (click)="reg()">Regulator Portal</button>
+            <button mat-menu-item (click)="cus()">Customer Portal</button>
+            <button mat-menu-item (click)="gop()">Grid Operator Portal</button>      
+          </mat-menu> -->
+
+    <button mat-raised-button color="primary" [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+      <!-- <mat-icon svgIcon="thumbs-up"></mat-icon> -->
+      Sections
+    </button>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item routerLink="home">
+        <span>Home</span>
+        <mat-icon class="icons">home</mat-icon>
+      </button>
+      <button mat-menu-item mat-menu-item routerLink="updates">
+        <span>Updates</span>
+        <mat-icon class="icons">notifications</mat-icon>
+      </button>
+      <button mat-menu-item routerLink="info">
+        <span>Information</span>
+        <mat-icon class="icons">info</mat-icon>
+      </button>
+      <button mat-menu-item mat-menu-item routerLink="tools">
+        <span>Tools</span>
+        <mat-icon class="icons">settings</mat-icon>
+      </button>
+      <button mat-menu-item mat-menu-item routerLink="connect">
+        <span>Connect</span>
+        <mat-icon class="icons">speaker_notes</mat-icon>
+      </button>
+    </mat-menu>
+  </div>
+</section>

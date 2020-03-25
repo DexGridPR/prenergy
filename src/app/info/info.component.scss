@@ -1,0 +1,45 @@
+.title {
+    text-align: center;
+    margin: 1rem 1rem;
+    font-size: 1.2rem;
+}
+
+.subtitle {
+    text-align: center;
+    margin: 0 auto;
+    font-size: 1.1rem;
+    text-decoration: underline;
+}
+
+.laws {
+    p {
+        text-align: center;
+        margin: 2rem 1.5rem;
+    }
+}
+
+#basic-grid {
+    margin: 1rem 2rem;
+    display: grid;
+    gap: 1rem;
+    // grid-template-columns: repeat( minmax(8rem, 15rem));
+    grid-template-columns: repeat(4rem, 3rem);
+}
+
+.card-title {
+    font-size: 1.3rem;
+    text-decoration: underline;
+}
+
+.card-subtitle {
+    font-size: 1.1rem;
+}
+
+.tab-content {
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+mat-tab-label-container {
+    padding: 0 20%;
+}
