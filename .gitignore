@@ -40,6 +40,13 @@ npm-debug.log
 yarn-error.log
 testem.log
 /typings
+storage.rules
+FETCH_HEAD
+firestore.rules
+firebase.json
+.firebaserc
+.firebase
+/functions
 
 # System Files
 .DS_Store
